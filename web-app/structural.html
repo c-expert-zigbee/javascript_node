@@ -1,0 +1,49 @@
+<!-- setting doctype --> 
+<!DOCTYPE html> 
+<!-- setting language --> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- creating title text --> 
+    <title>Shopping List</title> 
+    <!-- linking title font --> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet" href="./style.css"> <!-- linking of css styling code -->
+    <!-- linking icon font --> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styling.css" />
+  </head>
+  <body>
+    <!-- creating header -->
+    <header>
+      <h1>Shopping List</h1>
+    </header>
+    <!-- creating an input area for items -->
+    <form>
+      <input type="text" class="shopping-input" />
+      <button class="shopping-button" type="submit">
+        <i class="fas fa-plus"></i>
+      </button>
+      <!-- creating a filter system for items -->
+      <div class="select">
+        <select name="shoppingitems" class="filter-shoppingitems">
+          <option value="all">Filter: Latest</option>
+          <option value="completed">Filter: Added to Trolley</option>
+          <option value="uncompleted">Filter: Not Added to Trolley</option>
+        </select>
+      </div>
+    </form>
+    <div class="shopping-container">
+      <ul class="shopping-list"></ul>
+    </div>
+<!-- linking of javascript behaviourable code -->
+    <script src="./server.js"></script>
+  </body>
+</html>
